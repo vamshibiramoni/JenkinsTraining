@@ -5,7 +5,7 @@ pipeline {
             stage('build'){    
                 steps{                
                 // sh 'ant -f build.xml -v'
-                 archiveArtifacts  artfacts: 'src/*.java'
+                 archiveArtifacts  artifacts: 'src/*.java', fingerprint: true
                 
                 }
             }
