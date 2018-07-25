@@ -5,7 +5,7 @@ pipeline {
             stage('build'){    
                 steps{                
                 // sh 'ant -f build.xml -v'
-                 archiveArtifacts 'src/*.java'
+                 archiveArtifacts  artfacts: 'src/*.java'
                 
                 }
             }
